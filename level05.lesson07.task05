@@ -15,6 +15,10 @@ public class Rectangle
     private int width;
     private int height;
     
+    public void initialize(int top)
+    {
+        this.top = top;
+    }
     public void initialize(int top, int width, int left, int height)
     {
         this.top=top;
@@ -28,14 +32,6 @@ public class Rectangle
         this.left=left;
     }
     
-    public void initialize(int top, int left, int height, int width)
-    {
-        this.top=top;
-        this.left=left;
-        this.width=width;
-        this.height=width;
-    }
-    
     public void initialize(int top, int left, int width)
     {
         this.top=top;
@@ -43,6 +39,7 @@ public class Rectangle
         this.width=width;
         this.height=width;
     }
+    
     public  void initialize(Rectangle rect)
     {
         this.top = rect.top;
@@ -50,6 +47,4 @@ public class Rectangle
         this.width = rect.width;
         this.height = rect.height;
     }
-}
-//Не принимает код. Доработать
 }
