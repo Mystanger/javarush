@@ -1,0 +1,49 @@
+public class ConsoleReader
+{
+    public static String readString() throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String a = reader.readLine();
+        return a;
+    }
+
+    public static int readInt() throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String sb = reader.readLine();
+
+       int b = Integer.parseInt(sb);
+        return b;
+    }
+
+    public static double readDouble() throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String sc = reader.readLine();
+
+        double c = Double.parseDouble(sc);
+        return c;
+    }
+
+    public static boolean readBoolean() throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String d = reader.readLine();
+
+        if (d.equals("true"))
+        {
+            boolean m = true;
+            return m;
+        }
+        else
+        {
+            boolean m = false;
+            return m;
+        }
+        
+    }
+}
