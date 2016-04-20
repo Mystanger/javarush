@@ -1,0 +1,19 @@
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        System.out.println(please);
+    }
+
+    static KissMyShinyMetalAss please = new KissMyShinyMetalAss("Sasha");
+    public static class KissMyShinyMetalAss
+    {
+        String name;
+
+        public KissMyShinyMetalAss (String name)
+        {
+            this.name = name;
+        }
+    }
+
+}
